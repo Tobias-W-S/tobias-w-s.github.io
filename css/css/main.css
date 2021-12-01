@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #efe5df;
+    overflow-x: hidden;
+    animation-name: force-lock;
+    animation-duration: 4.5s;
+    width: 1420px;
+}
+
+header .header{
+    display: grid;
+    grid-template-columns: 850px 440px;
+}
+
+header #header .title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 192px;
+    color: #1a1a1a;
+    animation-name: header-enter;
+    animation-duration: 2.5s;
+    position: relative;
+    transition-timing-function: ease-out;
+    width: 1000px;
+}
+
+header #header .title2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 192px;
+    color: #1a1a1a;
+    animation-name: header-enter2;
+    animation-duration: 3.5s;
+    position: relative;
+    max-width: 440px;
+}
+
+main .loading{
+    background-color: #efe5df;
+    width: 250px;
+    height: 70px;
+    position: fixed;
+    left: 600px;
+    top: 1200px;
+    z-index: 2;
+
+    border-radius: 50px;
+    border-width: 12px;
+    border-color: #1a1a1a;
+    border-style: solid;
+
+    animation-name: loading;
+    animation-duration: 6s;
+}
+
+main .loading-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    position: relative;
+    top: 15px;
+    left: 30px;
+    font-size: 32px;
+}
+
+main .loading-text2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    position: relative;
+    bottom: 24px;
+    left: 170px;
+    font-size: 32px;
+    opacity: 0;
+    
+    animation-name: loading2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+main #main{
+    margin-top: 100px;
+}
+
+main #main .content{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1a1a1a;
+    animation-name: header-enter3;
+    animation-duration: 4.5s;
+    position: relative;
+    margin-left: 10px;
+    width: 1440px;
+}
+
+main .test{
+    width: 10px;
+    height: 2000px;
+}
+
+@keyframes header-enter{
+    0% {opacity: 0; right: 1000px;}
+    45% {opacity: 1; right: 500px;}
+    55% {opacity: 1; right: 600px;}
+    100% {opacity: 1; right: 0px;}
+}
+
+@keyframes header-enter2{
+    0% {opacity: 0; left: 1000px;}
+    55% {opacity: 1; left: 1000px;}
+    100% {opacity: 1; left: 0px;}
+}
+
+@keyframes header-enter3{
+    0% {opacity: 0; top: 750px;}
+    70% {opacity: 0; top: 750px;}
+    100% {opacity: 1; top: 0px;}
+}
+
+@keyframes force-lock{
+    0% {overflow-y: hidden;}
+    99% {overflow-y: hidden;}
+    100% {overflow-y: auto;}
+}
+
+@keyframes loading{
+    0% {top: 600px;}
+    75% {top: 600px;}
+    100% {top: 1200px}
+}
+
+@keyframes loading2{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    51% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 426px){
+
+    body{
+        width: 375px;
+    }
+
+    header .header{
+        display: grid;
+        grid-template-columns: 230px 140px;
+    }
+
+    header #header .title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 52px;
+        color: #1a1a1a;
+        animation-name: header-enter;
+        animation-duration: 2.5s;
+        position: relative;
+        transition-timing-function: ease-out;
+        width: 250px;
+    }
+
+    header #header .title2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 52px;
+        color: #1a1a1a;
+        animation-name: header-enter2;
+        animation-duration: 3.5s;
+        position: relative;
+    }
+
+    main #main .content{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        color: #1a1a1a;
+        animation-name: header-enter3;
+        animation-duration: 4.5s;
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 350px;
+        line-height: 1.5em;
+    }
+
+    @keyframes header-enter{
+        0% {opacity: 0; right: 250px;}
+        45% {opacity: 1; right: 175px;}
+        55% {opacity: 1; right: 195px;}
+        100% {opacity: 1; right: 0px;}
+    }
+
+    @keyframes header-enter2{
+        0% {opacity: 0; left: 250px;}
+        55% {opacity: 1; left: 250px;}
+        100% {opacity: 1; left: 0px;}
+    }
+    
+    @keyframes header-enter3{
+        0% {opacity: 0; top: 750px;}
+        70% {opacity: 0; top: 750px;}
+        100% {opacity: 1; top: 0px;}
+    }
+    
+
+}
