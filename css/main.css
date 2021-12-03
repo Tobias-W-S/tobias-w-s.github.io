@@ -47,7 +47,7 @@ header #header .title{
     font-size: 192px;
     color: #1a1a1a;
     animation-name: header-enter;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     position: relative;
     transition-timing-function: ease-out;
     width: 1000px;
@@ -59,7 +59,7 @@ header #header .title2{
     font-size: 192px;
     color: #1a1a1a;
     animation-name: header-enter2;
-    animation-duration: 3.5s;
+    animation-duration: 3s;
     position: relative;
     max-width: 440px;
     left: 84px;
@@ -81,7 +81,7 @@ main .loading{
     border-style: solid;
 
     animation-name: loading;
-    animation-duration: 6s;
+    animation-duration: 5.5s;
 }
 
 main .loading-text{
@@ -212,7 +212,7 @@ main #main .content{
     font-size: 14px;
     color: #1a1a1a;
     animation-name: header-enter3;
-    animation-duration: 4.5s;
+    animation-duration: 4s;
     position: relative;
     margin-left: 10px;
     width: 1440px;
