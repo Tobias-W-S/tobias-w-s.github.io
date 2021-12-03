@@ -225,16 +225,16 @@ main .test{
 }
 
 @keyframes header-enter{
-    0% {opacity: 0; right: 1000px;}
-    45% {opacity: 1; right: 500px;}
-    55% {opacity: 1; right: 600px;}
-    100% {opacity: 1; right: 0px;}
+    0% {right: 1000px;}
+    45% {right: 500px;}
+    55% {right: 600px;}
+    100% {right: 0px;}
 }
 
 @keyframes header-enter2{
-    0% {opacity: 0; left: 1000px;}
-    55% {opacity: 1; left: 1000px;}
-    100% {opacity: 1; left: 84px;}
+    0% {left: 1000px;}
+    55% {left: 1000px;}
+    100% {left: 84px;}
 }
 
 @keyframes header-enter3{
