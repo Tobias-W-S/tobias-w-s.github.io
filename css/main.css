@@ -51,7 +51,6 @@ header #header .title{
     position: relative;
     transition-timing-function: ease-out;
     width: 1000px;
-    left: 20px;
 }
 
 header #header .title2{
@@ -179,6 +178,10 @@ main #nav .backdrop-link{
 
 main #nav .link:hover{
     opacity: 0.5;
+
+}
+
+main #nav .link:hover:active{
     border-top-style: solid;
     border-bottom-style: none;
 }
@@ -231,7 +234,7 @@ main .test{
 @keyframes header-enter2{
     0% {opacity: 0; left: 1000px;}
     55% {opacity: 1; left: 1000px;}
-    100% {opacity: 1; left: 16.5px;}
+    100% {opacity: 1; left: 84px;}
 }
 
 @keyframes header-enter3{
