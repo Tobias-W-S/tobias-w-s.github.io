@@ -4,19 +4,26 @@
 }
 
 body{
-    background: rgb(239,229,223);
+    background: #c0cfeb;
     overflow-x: hidden;
     animation-name: force-lock;
     animation-duration: 4.5s;
     width: 1540px;
 }
 
+header{
+    background: rgb(239,229,223);
+    background: linear-gradient(180deg, rgba(239,229,223,1) 0%, rgba(192,207,235,1) 100%);
+}
+
 header .backdrop1{
     position: absolute;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom-style: none;
+    border-top-style: none;
     height: 240px;
     width: 200px;
     left: 300px;
@@ -25,13 +32,15 @@ header .backdrop1{
 
 header .backdrop2{
     position: absolute;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom-style: none;
+    border-top-style: none;
     height: 240px;
     width: 200px;
-    left: 998px;
+    left: 1000px;
     z-index: 2;
 }
 
@@ -65,18 +74,51 @@ header #header .title2{
     
 }
 
+footer{
+    background: rgb(192,207,235);
+    background: linear-gradient(180deg, rgba(192,207,235,1) 0%, rgba(152,157,167,1) 100%);
+    height: 160px;
+    width: 100%;
+
+    position: relative;
+    top: 200px
+}
+
+.filler{
+    height: 150px;
+    width: 10px;
+}
+
 .text{
     margin-left: 10px;
 }
 
+.div{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.div2{
+    margin-top: 20px;
+}
+
+.divimg{
+    border-radius: 50%;
+    height: 551px;
+    width: 551px;
+    position: relative;
+    top: -0.5px;
+    z-index: 2;
+}
+
 main .loading{
-    background-color: #efe5df;
+    background-color: #fbfff1;
     width: 250px;
     height: 70px;
     position: fixed;
     left: 600px;
     top: 1200px;
-    z-index: 2;
+    z-index: 3;
 
     border-radius: 50px;
     border-width: 12px;
@@ -117,28 +159,32 @@ main .nav{
     height: 125px;
     width: 900px;
     margin-left: 300px;
+
     position: sticky;
     top: 0;
 
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     border-bottom-style: solid;
-    border-bottom-color: #ddc8bc;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-top-style: none;
 
     /*
+    border-bottom-color: #ddc8bc;
     border-top-style: solid;
     border-top-color: #ebdacf;
     */
     
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-width: 4px;
+    border-bottom-width: 4px;
 
     /*
     background-color: #dbc8bc;
     */
 
     z-index: 3;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
@@ -156,14 +202,14 @@ main #nav .link{
     display: block;
     height: 75px;
     width: 125px;
-    background-color: #b89d8e;
+    background-color: #3066be;
     border-radius: 10px;
     cursor: pointer;
 
     border-width: 5px;
-    border-top-color: #cfa993;
+    border-top-color: #090c9b;
     border-bottom-style: solid;
-    border-bottom-color: #917b6f;
+    border-bottom-color: #3d7bdf;
 }
 
 main #nav .backdrop-link{
@@ -206,7 +252,9 @@ main #nav .link-content{
 
 main #main{
     margin-top: 40px;
-    height: 1000px;
+    height: 2400px;
+    position: relative;
+
 }
 
 main #main .content{
@@ -221,7 +269,7 @@ main #main .content{
     width: 1440px;
 }
 
-main #main .intro{
+main #main .content-div{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -239,7 +287,28 @@ main #main .intro{
 
 }
 
-main #intro .left{
+main #main .divB{
+    grid-template-columns: 700px auto;
+}
+
+main #main .divC{
+    grid-template-columns: 400px auto;
+}
+
+main #main .div1A{
+    left: 100px;
+    display: grid;
+    grid-template-columns: auto 520px;
+}
+
+main #main .div1B{
+    left: 100px;
+    display: grid;
+    grid-template-columns: auto 720px;
+}
+
+
+main #content-div .left{
     width: 520px;
     height: 300px;
 
@@ -251,28 +320,92 @@ main #intro .left{
     border-bottom-style: solid;
 
     margin-top: 125px;
+    
+    background-color: #c0e0fa;
+    border-color: #070974;
 }
 
-main #intro .filler{
-    width: 70px;
+main #content-div2 .right{
+    width: 540px;
     height: 300px;
-    background: rgb(239,229,223);
 
+    display: grid;
+    grid-template-columns: 70px 410px;
+    text-align: end;
+
+    border-width: 25px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+
+    margin-top: 125px;
+    
+    background-color: #c0e0fa;
+    border-color: #070974;
 }
 
-main #intro .right {
+main #main .div1B-Correction{
+    position: relative;
+    width: 740px;
+
+    grid-template-columns: 70px 610px;
+}
+
+main #content-div .leftB{
+    width: 720px;
+    grid-template-columns: 650px auto;
+}
+
+main #content-div .leftC{
+    width: 420px;
+    grid-template-columns: 350px auto;
+}
+
+main #content-div .filler{
+    width: 70px;
+    height: 300.5px;
+    background: #c0e0fa;
+    z-index: 1;
+}
+
+main #content-div2 .filler{
+    width: 70px;
+    height: 300.5px;
+    background: #c0e0fa;
+    z-index: 1;
+}
+
+main #content-div .right {
     height: 550px;
     width: 550px;
 
     border-radius: 50%;
     border-width: 25px;
     border-style: solid;
-    border-color: ;
-    z-index: -1;
+    border-color: #070974;
 
     position: relative;
     left: -50px;
 
+}
+
+main #content-div2 .left {
+    height: 550px;
+    width: 550px;
+
+    border-radius: 50%;
+    border-width: 25px;
+    border-style: solid;
+    border-color: #070974;
+
+    position: relative;
+    left: 390px;
+
+}
+
+
+main #main .div1B-CorrectionB{ 
+    position: relative;
+    left: 190px;
 }
 
 main .test{
@@ -297,6 +430,7 @@ main .test{
 @keyframes header-enter3{
     0% {opacity: 0; top: 750px;}
     70% {opacity: 0; top: 750px;}
+    80% {opacity: 0;}
     100% {opacity: 1; top: 0px;}
 }
 
