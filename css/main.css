@@ -85,7 +85,7 @@ footer{
 }
 
 .filler{
-    height: 150px;
+    height: 20px;
     width: 10px;
 }
 
@@ -287,12 +287,18 @@ main #main .content-div{
 
 }
 
-main #main .divB{
-    grid-template-columns: 700px auto;
+main #main .text-render{
+    height: auto;
+    width: auto;
 }
 
-main #main .divC{
-    grid-template-columns: 400px auto;
+main #main .text-renderA{
+    width: 630px;
+    height: 280px;
+}
+
+main #main .divB{
+    grid-template-columns: 700px auto;
 }
 
 main #main .div1A{
@@ -322,7 +328,7 @@ main #content-div .left{
     margin-top: 125px;
     
     background-color: #c0e0fa;
-    border-color: #070974;
+    border-color: #3c3744;
 }
 
 main #content-div2 .right{
@@ -340,7 +346,7 @@ main #content-div2 .right{
     margin-top: 125px;
     
     background-color: #c0e0fa;
-    border-color: #070974;
+    border-color: #3c3744;
 }
 
 main #main .div1B-Correction{
@@ -355,10 +361,6 @@ main #content-div .leftB{
     grid-template-columns: 650px auto;
 }
 
-main #content-div .leftC{
-    width: 420px;
-    grid-template-columns: 350px auto;
-}
 
 main #content-div .filler{
     width: 70px;
@@ -381,7 +383,7 @@ main #content-div .right {
     border-radius: 50%;
     border-width: 25px;
     border-style: solid;
-    border-color: #070974;
+    border-color: #3c3744;
 
     position: relative;
     left: -50px;
@@ -395,7 +397,7 @@ main #content-div2 .left {
     border-radius: 50%;
     border-width: 25px;
     border-style: solid;
-    border-color: #070974;
+    border-color: #3c3744;
 
     position: relative;
     left: 390px;
