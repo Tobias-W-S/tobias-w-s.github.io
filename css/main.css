@@ -134,6 +134,7 @@ main .loading{
 
     animation-name: loading;
     animation-duration: 5.5s;
+    opacity: 0;
 }
 
 main .loading-text{
@@ -232,6 +233,7 @@ main #nav .backdrop-link{
     left: 31px;
 
     z-index: 2;
+
 }
 
 main #nav .link:hover:active{
