@@ -2,9 +2,8 @@ console.log('test');
 
 
 function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-console.log(getRandomInt(3));   
+  return Math.floor(Math.random() * max);
+}
 
 function rdmRotate(x){
   document.getElementsByClassName("p" + x)[0].style.transform = "rotate(" + getRandomInt(181) + "deg)";
@@ -12,111 +11,204 @@ function rdmRotate(x){
 
 
 function loopCall(){
+  animation1()
   (function loop1() {
     setTimeout(function () {
       // execute script
+
       rdmRotate(1)
       loop1()
     }, 6500); //6500 = 6500ms = 6.5s
   }());
 }
 
-function loopCall2(){
-  setTimeout(function(){
-    (function loop2() {
-      setTimeout(function () {
-
-        rdmRotate(2)
-        loop2()
-      }, 7000); 
-    }());
-  }, 5000);
+function animation1() {
+  let id = null;
+  const elem = document.getElementById("animate1");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -900) {
+      clearInterval(id);
+      rdmRotate(1);   
+      animation1();
+    } else {
+      pos--;
+      elem.style.top = 500 + (pos/3*2) + 'px';
+      if(pos > -700){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -700)/200;
+      }
+    }
+  }
 }
 
-function loopCall3(){
-  setTimeout(function(){
-    (function loop3() {
-      setTimeout(function () {
-
-        rdmRotate(3)
-        loop3()
-      }, 8000); 
-    }());
-  }, 3000);
+function animation2() {
+  let id = null;
+  const elem = document.getElementById("animate2");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -600) {
+      clearInterval(id);
+      rdmRotate(2);   
+      animation2();
+    } else {
+      pos--;
+      elem.style.top = 300 + (pos/4*3) + 'px';
+      if(pos > -400){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -400)/200;
+      }
+    }
+  }
 }
 
-function loopCall4(){
-  setTimeout(function(){
-    (function loop4() {
-      setTimeout(function () {
-
-        rdmRotate(4)
-        loop4()
-      }, 7000); 
-    }());
-  }, 1000);
+function animation7() {
+  let id = null;
+  const elem = document.getElementById("animate7");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -1000) {
+      clearInterval(id);
+      rdmRotate(7);   
+      animation7();
+    } else {
+      pos--;
+      elem.style.top = 400 + (pos/5*2) + 'px';
+      if(pos > -800){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -800)/200;
+      }
+    }
+  }
 }
 
-function loopCall5(){
-  setTimeout(function(){
-    (function loop5() {
-      setTimeout(function () {
-
-        rdmRotate(5)
-        loop5()
-      }, 6500); 
-    }());
-  }, 3000);
+function animation4() {
+  let id = null;
+  const elem = document.getElementById("animate4");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -900) {
+      clearInterval(id);
+      rdmRotate(4);   
+      animation4();
+    } else {
+      pos--;
+      elem.style.top = 500 + (pos/6*5) + 'px';
+      if(pos > -700){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -700)/200;
+      }
+    }
+  }
 }
 
-function loopCall6(){
-  setTimeout(function(){
-    (function loop6() {
-      setTimeout(function () {
-
-        rdmRotate(6)
-        loop6()
-      }, 6000); 
-    }());
-  }, 2000);
+function animation5() {
+  let id = null;
+  const elem = document.getElementById("animate5");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -1100) {
+      clearInterval(id);
+      rdmRotate(5);   
+      animation5();
+    } else {
+      pos--;
+      elem.style.top = 300 + (pos/7*2) + 'px';
+      if(pos > -900){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -900)/200;
+      }
+    }
+  }
 }
 
-function loopCall7(){
-  setTimeout(function(){
-    (function loop7() {
-      setTimeout(function () {
-
-        rdmRotate(7)
-        loop7()
-      }, 9000); 
-    }());
-  }, 5000);
+function animation6() {
+  let id = null;
+  const elem = document.getElementById("animate6");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -900) {
+      clearInterval(id);
+      rdmRotate(6);   
+      animation6();
+    } else {
+      pos--;
+      elem.style.top = 350 + (pos/3*1.5) + 'px';
+      if(pos > -700){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -700)/200;
+      }
+    }
+  }
 }
 
-function loopCall8(){
-  setTimeout(function(){
-    (function loop8() {
-      setTimeout(function () {
-
-        rdmRotate(8)
-        loop8()
-      }, 12000); 
-    }());
-  }, 2000);
+function animation3() {
+  let id = null;
+  const elem = document.getElementById("animate3");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == -800) {
+      clearInterval(id);
+      rdmRotate(3);   
+      animation3();
+    } else {
+      pos--;
+      elem.style.top = 200 + (pos/5*4) + 'px';
+      if(pos > -600){
+        elem.style.opacity = 0.00 + -pos/200;
+      } else {
+        elem.style.opacity = 1.00 - (-pos -600)/200;
+      }
+    }
+  }
 }
 
-loopCall()
+function animation1a() {
+  setTimeout(function(){ animation1() }, 1000);
+}
 
-loopCall2()
+function animation2a() {
+  setTimeout(function(){ animation2() }, 600);
+}
 
-loopCall3()
+function animation3a() {
+  setTimeout(function(){ animation3() }, 100);
+}
 
-loopCall4()
+function animation5a() {
+  setTimeout(function(){ animation5() }, 700);
+}
 
-loopCall5()
+animation1a()
 
-loopCall6()
+animation2a()
 
-loopCall7()
+animation3a()
 
-loopCall8()
+animation4()
+
+animation5a()
+
+animation6()
+
+animation7()
