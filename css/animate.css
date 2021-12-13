@@ -12,8 +12,6 @@
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
 
-    width: 50px;
-    height: 40px;
     border-radius: 20%;
 
     position: relative;
@@ -27,6 +25,9 @@
     left: 10%;
     top: 500px;
 
+    width: 50px;
+    height: 40px;
+
     animation-name: part-1;
     animation-duration: 6.5s;
     animation-timing-function: linear;
@@ -38,6 +39,9 @@
     transform: rotate(120deg);
     left: 40%;
     top: 500px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-1;
     animation-duration: 7s;
@@ -51,6 +55,9 @@
     transform: rotate(-125deg);
     left: 60%;
     top: 200px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-2;
     animation-duration: 8s;
@@ -64,6 +71,9 @@
     transform: rotate(90deg);
     left: 85%;
     top: 600px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-3;
     animation-duration: 7s;
@@ -77,6 +87,9 @@
     transform: rotate(30deg);
     left: 25%;
     top: 200px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-2-1;
     animation-duration: 6.5s;
@@ -90,6 +103,9 @@
     transform: rotate(65deg);
     left: 50%;
     top: 250px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-4;
     animation-duration: 6s;
@@ -104,6 +120,9 @@
     transform: rotate(60deg);
     left: 70%;
     top: 500px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-1;
     animation-duration: 9s;
@@ -117,6 +136,9 @@
     transform: rotate(135deg);
     left: 35%;
     top: 600px;
+    
+    width: 50px;
+    height: 40px;
 
     animation-name: part-3;
     animation-duration: 12s;
@@ -125,6 +147,7 @@
     animation-iteration-count: infinite;
     opacity: 0;
 }
+
 
 @keyframes part-1{
     0%{opacity: 0; top: 500px;}

@@ -10,6 +10,7 @@ function rdmRotate(x){
   document.getElementsByClassName("p" + x)[0].style.transform = "rotate(" + getRandomInt(181) + "deg)";
 }
 
+
 function loopCall(){
   (function loop1() {
     setTimeout(function () {
