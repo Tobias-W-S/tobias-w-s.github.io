@@ -219,6 +219,8 @@ main #nav .link{
     border-top-color: #090c9b;
     border-bottom-style: solid;
     border-bottom-color: #3d7bdf;
+
+    transition: 1s; 
 }
 
 
@@ -241,10 +243,11 @@ main #nav .link:hover:active{
     border-bottom-style: none;
 }
 
-main #nav .link:hover .backdrop-link{
+main #nav .link:hover{
+    
 
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    background: rgb(65,137,255);
+    background: radial-gradient(circle, rgba(65,137,255,1) 0%, rgba(48,177,190,1) 100%);
 }
 
 main #nav .link-content{
