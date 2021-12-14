@@ -47,7 +47,7 @@ function animation2() {
     if (pos == -600) {
       clearInterval(id);
       rdmRotate(2);   
-      rdmPos(2, 35);
+      rdmPos(2, 40);
       animation2();
     } else {
       pos--;
@@ -143,7 +143,7 @@ function animation6() {
     if (pos == -900) {
       clearInterval(id);
       rdmRotate(6);
-      rdmPos(6, 50);   
+      rdmPos(6, 27);   
       animation6();
     } else {
       pos--;

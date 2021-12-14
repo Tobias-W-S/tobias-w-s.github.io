@@ -86,6 +86,11 @@ footer{
     background: linear-gradient(180deg, rgba(192,207,235,1) 0%, rgba(255,201,252,1) 100%);
 }
 
+strong{
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .filler{
     height: 20px;
     width: 10px;
@@ -216,11 +221,12 @@ main #nav .link{
     cursor: pointer;
 
     border-width: 5px;
-    border-top-color: #090c9b;
+    border-top-color: rgb(119, 202, 209);
     border-bottom-style: solid;
     border-bottom-color: #3d7bdf;
 
-    transition: 1s; 
+    color:#1a1a1a ;
+    text-decoration: none;
 }
 
 
@@ -258,6 +264,8 @@ main #nav .link-content{
     position: relative;
     height: 49px;
     top: -5px;
+
+    text-decoration: none;
 }
 
 main #main{
