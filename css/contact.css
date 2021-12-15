@@ -23,8 +23,8 @@ main #contact .contact-div{
 }
 
 main #contact .content{
-    width: 770px;
-    height: 600px;
+    width: 715px;
+    height: 475px;
 
     position: relative;
     right: 25px;
@@ -35,4 +35,111 @@ main #contact .content{
     border-radius: 150px;
 
     z-index: 1;
+
+    display: grid;
+
+    padding-top: 125px;
+    padding-left: 55px;
+
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px 100px;
+
+    grid-template-areas: 
+        'a a b b'
+        'c c b b'
+        'd d b b'
+    ;
+
+
+
+    grid-gap: 20px;
+}
+
+main #contact .text-correction{
+    position: relative;
+    bottom: 450px;
+    width: 400px;
+
+    font-size: 45px;
+
+    padding-left: 5px;
+}
+
+main #contact .form-content{
+    background-color: rgba(69, 112, 148, 0.7);
+    border-radius: 20px;
+}
+
+main #contact .form-a{
+    grid-area: a;
+
+    display: grid;
+    grid-template-rows: 1.75em 40px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main #contact .fText{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+
+    outline: none;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    transition-duration: 0.1s;
+}
+
+main #contact .fText-Correction{
+    resize: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main #contact .fText:focus{
+    border-color: rgb(0, 0, 0, 0.6);
+}
+
+main #contact .fText::placeholder{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+main #contact .form-b{
+    grid-area: b;
+
+    display: grid;
+    grid-template-rows: 1.75em calc(100% - 3.25em);
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main #contact .form-c{
+    grid-area: c;
+    
+    display: grid;
+    grid-template-rows: 1.75em 40px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main #contact .form-d{
+    grid-area: d;
+    
+    display: grid;
+    grid-template-rows: 1.75em 40px;
+
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
