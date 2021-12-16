@@ -48,6 +48,7 @@ main #contact .content{
         'a a b b'
         'c c b b'
         'd d b b'
+        'x e e X'
     ;
 
 
@@ -58,6 +59,7 @@ main #contact .content{
 main #contact .text-correction{
     position: relative;
     bottom: 450px;
+    right: 325px;
     width: 400px;
 
     font-size: 45px;
@@ -111,6 +113,34 @@ main #contact .fText::placeholder{
 
 }
 
+main #contact .fButton{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.8);
+
+    outline: none;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    height: 75px;
+    width: 200px;
+
+    position: relative;
+    left: 50px;
+
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    color: #42525f;
+}
+
+main #contact .fButton:active{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
 main #contact .form-b{
     grid-area: b;
 
@@ -142,4 +172,12 @@ main #contact .form-d{
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+main #contact .form-e{
+    grid-area: e;
+}
+
+main #contact .form-x{
+    grid-area: x;
 }
