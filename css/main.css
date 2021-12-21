@@ -490,6 +490,10 @@ main #main .div1B-CorrectionB{
 
 @media only screen and (max-width: 376px){
 
+    /* Dit hoort te werken bij de iphone 6/7/8 
+    (en als je het inspect element aanzet op die modus. Soms lijkt het niet te werken. 
+    Waardoor dit komt weet ik persoonlijk niet.*/
+
     body{
         width: 375px;
     }
@@ -547,7 +551,7 @@ main #main .div1B-CorrectionB{
         height: 320px;
         width: 375px;
 
-        top: 320px;
+        top: 350px;
 
         z-index: -1;
         background: rgb(192,207,235);
