@@ -204,6 +204,11 @@ main #mobile-content .fButton{
 
 
 @media only screen and (max-width: 376px){
+    main #main{
+        height: 0;
+        width: 0;
+    }
+
     main #main .contact{
         width: 100%;
         height: 0;
@@ -269,6 +274,7 @@ main #mobile-content .fButton{
         padding-left: 15px;
 
         font-size: 16px;
+        opacity: 1;
     }
     
     main #mobile-content .fText{
@@ -295,6 +301,8 @@ main #mobile-content .fButton{
         padding-bottom: 0;
         width: 250px;
         height: 100px;
+
+        opacity: 1;
     }
     
     main #mobile-content .fText:focus{
@@ -328,6 +336,8 @@ main #mobile-content .fButton{
         font-size: 16px;
         font-family: 'Open Sans', sans-serif;
         color: #42525f;
+
+        opacity: 1;
     }
     
     main #mobile-content .fButton:active{
