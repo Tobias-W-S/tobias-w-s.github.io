@@ -278,7 +278,7 @@ main #nav .link-content{
     left: 3px;
 
     text-decoration: none;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 main #nav .link:hover .link-content{
