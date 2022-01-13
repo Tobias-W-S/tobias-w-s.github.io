@@ -502,15 +502,12 @@ main #main .div1B-CorrectionB{
 }
 */
 
+@media only screen and (max-width: 391px){
 
-@media only screen and (max-width: 376px){
-
-    /* Dit hoort te werken bij de iphone 6/7/8 
-    (en als je het inspect element aanzet op die modus. Soms lijkt het niet te werken. 
-    Waardoor dit komt weet ik persoonlijk niet.*/
+    /* Dit hoort te werken op een iphone 12 pro*/
 
     body{
-        width: 375px;
+        width: 390px;
     }
 
     main #main{
@@ -564,9 +561,9 @@ main #main .div1B-CorrectionB{
         position: fixed;
 
         height: 320px;
-        width: 375px;
+        width: 390px;
 
-        top: 350px;
+        top: 525px;
 
         z-index: -1;
         background: rgb(192,207,235);
@@ -575,7 +572,7 @@ main #main .div1B-CorrectionB{
     
     main .nav{
         height: 100px;
-        width: 375px;
+        width: 390px;
         left: -300px;
     
         position: fixed;
@@ -612,7 +609,7 @@ main #main .div1B-CorrectionB{
     
     main #nav .nav-content{
         display: grid;
-        grid-template-columns: 20px 75px 45px 75px 45px 75px;
+        grid-template-columns: 37.5px 75px 45px 75px 45px 75px;
         padding-top: 20px;
     }
     
@@ -973,14 +970,17 @@ main #main .div1B-CorrectionB{
     }
 }
 
-@media only screen and (max-width: 391px){
 
-    /* Dit hoort te werken bij de iphone 6/7/8 
+
+
+@media only screen and (max-width: 376px){
+
+    /* Dit hoort te werken bij de iphone 6/7/8 of iphone SE
     (en als je het inspect element aanzet op die modus. Soms lijkt het niet te werken. 
     Waardoor dit komt weet ik persoonlijk niet.*/
 
     body{
-        width: 390px;
+        width: 375px;
     }
 
     main #main{
@@ -1034,9 +1034,9 @@ main #main .div1B-CorrectionB{
         position: fixed;
 
         height: 320px;
-        width: 390px;
+        width: 375px;
 
-        top: 525px;
+        top: 350px;
 
         z-index: -1;
         background: rgb(192,207,235);
@@ -1045,7 +1045,7 @@ main #main .div1B-CorrectionB{
     
     main .nav{
         height: 100px;
-        width: 390px;
+        width: 375px;
         left: -300px;
     
         position: fixed;
@@ -1082,7 +1082,7 @@ main #main .div1B-CorrectionB{
     
     main #nav .nav-content{
         display: grid;
-        grid-template-columns: 37.5px 75px 45px 75px 45px 75px;
+        grid-template-columns: 20px 75px 45px 75px 45px 75px;
         padding-top: 20px;
     }
     

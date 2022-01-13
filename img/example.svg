@@ -1,0 +1,50 @@
+<svg xmlns='http://www.w3.org/2000/svg' height="300" width="300" >
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,201,252);stop-opacity:1" />
+      <stop offset="30%" style="stop-color:rgb(192,207,235);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgb(239,229,223);stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(245, 223, 159);stop-opacity:1" />
+      <stop offset="30%" style="stop-color:rgb(132, 195, 240);stop-opacity:1" />
+      <stop offset="70%" style="stop-color:rgb(255, 110, 197);stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(128, 40, 23);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(189, 50, 28);stop-opacity:1" />
+    </radialGradient>
+    <rect height="300" width="300" fill="url(#grad1)"/>
+
+    <g transform="translate(25)">
+        <polygon points="75,25 175,25 225,75 225,200"
+        fill="url(#grad3)"/>
+
+        <polygon points="225,200 300,275 225,350 120,250 175,250"
+        fill="url(#grad3)"/>
+
+        <polygon points="25,150 125,250 75,250 25,200"
+        fill="url(#grad3)"/>
+
+        <g transform="translate(5,5)">    
+            <polyline points="75,25 175,25 225,75 225,200 175,250 75,250 25,200 25,75 125,50"
+            style="fill:none;stroke:rgb(245, 252, 199);stroke-width:10" />
+        </g>
+
+        <polyline points="75,25 175,25 225,75 225,200 175,250 75,250 25,200 25,75 125,50"
+        style="fill:none;stroke:black;stroke-width:10" />
+
+        <polyline points="120,90 130,100 120,140 140,150 150,145 160,155"
+        style="fill:none;stroke:black;stroke-width:7"/>
+
+        <polygon points="60,90 50,135 75,120"
+        style="stroke:black;stroke-width:4" fill="url(#grad2)"/>
+        <polygon points="160,110 175,135 90,120"
+        style="stroke:black;stroke-width:4" fill="url(#grad2)"/>
+        <g transform="rotate(40 70 0) translate(100 -50)"><polygon points="95,180 199,200 105,190 60,210"
+        style="stroke:black;stroke-width:4" fill="url(#grad2)"/></g>
+    </g>
+
+
+</svg>
